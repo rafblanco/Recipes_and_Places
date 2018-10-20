@@ -2,7 +2,7 @@ $("#search-btn").on("click", function(event) {
         event.preventDefault();
     $("#place-display").empty();
       // Storing our giphy API URL for a random cat image
-      var userInput = $("#user-input").val().trim();
+      var userInput = $("#input-text").val().trim();
       var queryURL = "https://developers.zomato.com/api/v2.1/search?apikey=1acc25ae50354b28a222fa9c8753f32c&q=" + userInput;
 
       // Perfoming an AJAX GET request to our queryURL
