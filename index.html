@@ -10,42 +10,40 @@
     <nav>
         <div class="nav-wrapper brown darken-3">
             <a href="#" class="brand-logo center">Recipes & Places</a>
-
-
             <div class="dropdown">
-                
-                
-             
-                  
-                    <a class='dropdown-button btn' style="float:right" href='#' data-activates='dropdown1'>Drop Me!</a>
-                    <ul id='dropdown1' class='dropdown-content'>
-                      <li><a href="#!">one</a></li>
-                      <li><a href="#!">two</a></li>
-                      <li class="divider"></li> 
-                      <li><a href="#!">three</a></li>
-                    </ul>
-                </div>
-
+                <a class="dropdown-button btn" style="float:right" href='#' data-activates='dropdown1'>Drop Me!</a>
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+            </div>
             <form class=" hide-on-med-and-down" id="form1">
                 <div class="input-field" style="max-width: 30%;">
-                    <input id="search" type="search" required>
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          
-                      </div>
-      
-          </span>
-          
-          
-          
-          
+                    <input id="input-text" type="search" required>
+                    <label id="search-btn" class="label-icon" for="search"><i class="material-icons">search</i></label>
                 </div>
-    </nav>
-    </form>
-   
-        <img src="background-board-chillies-1435895.jpg" alt="board" width="100%">
-         <img src="bacon-bowl-bread-660282.jpg" alt="bacon" width="100%">
+            </form>
 
-    
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col m1">
+        </div>       
+        <div id="recipe-display" class="col m6" style="width: 40%">
+        </div>
+        <div id="place-display" class="col m3 offset-s3" style="width: 40%; height: 90%; overflow-y: scroll" >
+        </div>
+        <div class="col m1">
+        </div> 
+    </div>
+
+    <img src="background-board-chillies-1435895.jpg" alt="board" width="100%">
+    <img src="bacon-bowl-bread-660282.jpg" alt="bacon" width="100%">
+
+
     </div>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
