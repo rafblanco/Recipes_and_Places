@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html>
-<title>Recipes & Places</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link src="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<head>
+    <title>Recipes & Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700|Merriweather:700" rel="stylesheet">
+
+</head>
 
 <body>
-
-    <nav>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li><a data-cuisine="italian" href="#!">Italian</a></li>
+        <li class="divider"></li>
+        <li><a data-cuisine="mexican" href="#!">Mexican</a></li>
+        <li class="divider"></li>
+        <li><a data-cuisine="chinese" href="#!">Chinese</a></li>
+        <li class="divider"></li>
+        <li><a data-cuisine="middle eastern" href="#!">Middle Eastern</a></li>
+        <li class="divider"></li>
+        <li><a data-cuisine="japanese" href="#!">Japanese</a></li>
+        <li class="divider"></li>
+        <li><a data-cuisine="pizza" href="#!">Pizza</a></li>
+    </ul>
+    <nav class="transparent"> 
         <div class="nav-wrapper brown darken-3">
             <a href="#" class="brand-logo center">Recipes & Places</a>
-            <!-- <div class="dropdown">
-                <a class='dropdown-button btn' style="float:right" href='#' data-activates='dropdown1'>Drop Me!</a>
-                <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">three</a></li>
+
+            <div class="dropdown">
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Cuisines<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
-            </div> -->
-            <form class=" hide-on-med-and-down" id="form1">
-                <div class="input-field" style="max-width: 30%;">
+            </div>
+            <form class="left-align" id="form1">
+                <div class="input-field" style="max-width: 30%; background-color: rgba(255, 255, 255, 0.123)"
+
                     <input id="input-text" type="search" required>
                     <label id="search-btn" class="label-icon" for="search"><i class="material-icons">search</i></label>
-                </div> 
+                    <i class="material-icons">close</i>
+                </div>
             </form>
-
         </div>
     </nav>
+    <div id="intro-view"class="row">
+            <div id="food-view" class="col m6" >
+                <!-- <img style="width:100%; height:100%; overflow:hidden" src="chicken-food.jpg"> -->
+                <h4>Find a recipe</h4>
+            </div>
+            <div id="place-view" class="col m6" >
+                <!-- <img style="width:100%; height:100%; overflow:hidden; background-size:100%" src="bar-place.jpg"> -->
+                <h4>Find a place to eat</h4>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col m1">
 
-    <div class="row"> 
-        <div class="col m1">
-        </div>       
-        <div id="recipe-display" class="col m6" style="width: 40%; margin: 20px; width: 40%; height: 600px; overflow-y: scroll;">
         </div>
-        <div id="place-display" class="col m3 offset-s3" style=" margin: 20px; width: 40%; height: 600px; overflow-y: scroll; border: 2px solid black" >
+        <div id="recipe-display" class="col m6">
+        </div>
+        <div id="place-display" class="col m3 offset-s3">
+
         </div>
         <div class="col m1">
-        </div> 
+        </div>
     </div>
 
     <!-- <img src="assets/images/background-board-chillies-1435895.jpg" alt="board" width="100%"> -->
     <!-- <img src="assets/images/bacon-bowl-bread-660282.jpg" alt="bacon" width="100%"> -->
 
 
-    </div>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="assets/javascript/zomato.js"></script> 
-    <script src="assets/javascript/project-ajax.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/javascript/zomato.js"></script>
+    <script src="assets/javascript/spoonacular.js"></script>
 </body>
 
 </html>
