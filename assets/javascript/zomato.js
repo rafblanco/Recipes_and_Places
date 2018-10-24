@@ -7,6 +7,7 @@ $(document).ready(function() {
         event.preventDefault();
         $("#place-display").empty();
 
+
         //  Stores input text
         var userInput = $("#input-text").val().trim();
         var queryURL = "https://developers.zomato.com/api/v2.1/search?apikey=1acc25ae50354b28a222fa9c8753f32c&q=" + userInput;
