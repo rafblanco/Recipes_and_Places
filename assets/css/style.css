@@ -1,0 +1,56 @@
+
+.brand-logo{
+    font-family: 'Merriweather', serif;
+    font-size: 45px;
+}
+#dropdown1 a{
+    color: rgb(92, 89, 89);
+}
+#food-view{
+    background: url(../images/bacon-burger.jpg);
+    opacity: 0.75;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    position: absolute; 
+    left: 0px;
+    height: 100%;
+    padding: 5% 0;
+    }
+#place-view{
+    background: url(../images/bar-place.jpg);
+    opacity: 0.75;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    padding: 5% 0;
+    
+}
+#place-view h4, #food-view h4 {
+    color: white;
+    padding: 30% 0;
+    vertical-align: middle;
+    text-shadow: 1.5px 1.5px black;
+    text-align: center;
+    
+}
+
+#intro-view {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px; 
+}
+
+#recipe-display, #place-display{
+    margin: 20px;
+    width: 40%; 
+    height: 600px; 
+    overflow-y: scroll;
+}
+
+#recipe-display div, #place-display{
+    color: white;
+}
